@@ -47,7 +47,7 @@ public class NulizhuOperator {
                     }
                 }
                 if(checkdie(mylist[hitindex])){
-                    System.out.println("Nuli die!");
+                    //Patron die but remain at board so minionnum remains
                     mylist[hitindex].type = "Dead_Minion";
                 }
             }
@@ -58,7 +58,11 @@ public class NulizhuOperator {
     public void initialize_board(Nulizhusource[] mylist){
         minionnum = 1;
         mylist[0]=new Nulizhusource("Hero");
-        mylist[0].health=3;
+
+        //Set hero health
+        mylist[0].health=7;
+        //****
+
         mylist[1]=new Nulizhusource("Minion");
         for(int i=2;i<mylist.length;i++){
             mylist[i] = new Nulizhusource("Empty");

@@ -5,6 +5,7 @@ package Nulizhu;
  */
 
 public class NulizhuTest {
+    //Loop to check ratio
     public static void main(String[] args) {
         int numofdie = 0;
         for (int i = 0; i < 99; i++){
@@ -17,6 +18,6 @@ public class NulizhuTest {
             }
             //operator.print_board(mylist);
         }
-        System.out.println(numofdie);
+        System.out.println(numofdie+"%");
     }
 }
